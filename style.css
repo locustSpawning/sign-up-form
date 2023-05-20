@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    background-size: cover;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/* Intro section - headings (2) */
+h1, h2 {
+    padding:5px;
+    margin-left: 50px;
+}
+
+h1 {
+    margin-top: 200px;
+}
+
+
+
+/* Form container (Fieldset) */
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1ps #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+
+/* Labels and input */
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input{
+    padding: .5em;
+    border: solid 1ps #999;
+    width: 20em;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .8em;
+}
+
+/* Large screen rules */
+@media screen and (min-width: 430px){
+    fieldset{
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+    }
+    
+    label {
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    } 
+}

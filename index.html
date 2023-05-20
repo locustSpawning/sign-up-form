@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" href="https://em-content.zobj.net/thumbs/120/apple/354/bread_1f35e.png">
 
 </head>
 <body>
     <script src="script.js"></script>
-    <img src="images/cinnamon-roll.jpg">
+    <img id="bun-image" src="images/cinnamon-rollLG.jpg">
     <div id="intro">
-        <h1> Sign up for our news letter! This is not a real online service! But sign up anyway! Sign up <em>now</em> to get started.</h1>
-        <h2> You <em>know</em> you want to.</h2>
+        <h1 id="Sign-up-message"> Sign up for our news letter! This is not a real online service.. But sign up anyway! <br> Sign up <em>now</em> to get started.</h1>
+        <h1 id="you-know-want-to"> You <em>know</em> you want to.</h1>
         <form>
             <fieldset>
-            
-                <h2> Let's do this!</h2>
+                <h2 id="lets-do-this"> Let's do this!</h2>
+    
+                <div class="LEFT" style="display:inline-block; margin-left: 20px;">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name">
 
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" name="first_name">
+                    <label for="user_email">EMAIL</label>
+                    <input type="email" id="user_email" name="email">
 
-                <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" name="last_name">
+                    <label for="user_password">PASSWORD</label>
+                    <input type="password" id="user_password" name="password">
 
-                <label for="user_email">EMAIL</label>
-                <input type="email" id="user_email" name="email">
+                </div>
 
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="phone_number" id="phone_number" name="phone_number">
+                <div class="RIGHT" style="display:inline-block; margin-right: 20px;  margin-left: 20px;">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name">
 
-                <label for="user_password">PASSWORD</label>
-                <input type="password" id="user_password" name="password">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="phone_number" id="phone_number" name="phone_number">
 
-                <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm_password" name="confirm_password">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
 
             </fieldset>
         </form>
         <p><input type="submit" value="Create Account" /></p>
-        <text>Already have an accout? <button id="log_in_btn">Log in</button></text>
+        <text id="log-in">Already have an accout? <a href="#" class="btn">Log in</a></text>
     </div>
     
     

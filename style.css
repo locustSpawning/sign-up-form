@@ -4,27 +4,38 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow: auto;
-    background-size: cover;
+    background-color: #d4bc9b;
+    color: #241d15;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
 /* Intro section - headings (2) */
-h1, h2 {
+h1 {
     padding:5px;
     margin-left: 50px;
 }
 
-h1 {
-    margin-top: 200px;
+#Sign-up-message {
+    margin-top: 360px;
+    max-width: 800px;
+}
+
+#you-know-want-to {
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+#lets-do-this {
+    margin-left: 18px;
 }
 
 
 
 /* Form container (Fieldset) */
 fieldset {
-    margin: 2em 0;
-    padding: 1em 2em;
+    background-color: #e6ccaa;
+    padding: 1em 2em 2em;
     border: solid 1ps #ccc;
     border-radius: 6px;
     min-width: 200px;
@@ -32,31 +43,36 @@ fieldset {
 
 
 /* Labels and input */
+
 label {
     display: block;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 input{
+    display: block;
     padding: .5em;
     border: solid 1ps #999;
     width: 20em;
+    margin-bottom: 1.2em;
 }
+
 
 /* Submit Button */
 input[type="submit"] {
-    padding: .5em 1em;
+    margin: 55px 0px 35px 50px;
+    width: 230px;
+    height: 55px;
     border-radius: 6px;
-    background-color: #333;
+    background-color: #1c150b;
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 /* Large screen rules */
 @media screen and (min-width: 430px){
     fieldset{
-        width: 40%;
         min-width: 320px;
         margin: auto;
     }
@@ -67,4 +83,12 @@ input[type="submit"] {
         margin-top: 0;
         margin-right: .5em;
     } 
+}
+
+.LEFT {
+    margin-right: 55px;
+}
+
+#log-in {
+    margin-left: 50px;
 }

@@ -1,32 +1,81 @@
-/*
-  VARIABLES DECLARATION ON ROOT
-*/
+/* VARIABLES DECLARATION ON ROOT */
 
 :root {
     --dark-tone: #241d15;
-    --mid-tone: #d4bc9b;
-    --light-tone: #e6ccaa;
+    --mid-tone: #f5ead7;
+    --light-tone: #fff6e6;
+    --high-light: #af8b4d;
 }
 
-/*
-    COMMON STYLING
-*/
+
+/* COMMON STYLING */
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding:0;
 }
 
 body {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-    margin: 0;
     overflow: hidden;
     background-color: var(--mid-tone);
     color: var(--dark-tone);
 }
+
+.image-block,
+.form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding:0;
+}
+
+
+
+/* Image Section */
+.image-block {
+    flex: 4.5;
+    justify-content: flex-start;
+    background: url(images/cinnamon-rollLG.jpg) no-repeat center;
+    max-width: 900px;
+}
+
+.sweet-stuff {
+    color:#fff;
+    font-size: 4em;
+}
+
+.logo-container {
+    position: relative;
+    top: 445px;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.404);
+}
+
+
+/* Form Section */
+.form-block {
+    flex: 1;
+    width: 100%;
+}
+
 
 
 /* Intro section - headings (2) */
@@ -36,7 +85,7 @@ h1 {
 }
 
 #Sign-up-message {
-    margin-top: 200px;
+    margin-top: 250px;
     max-width: 1300px;
 }
 
@@ -50,16 +99,18 @@ h1 {
 }
 
 
+
 /* Form container (Fieldset) */
 fieldset {
     background-color: var(--light-tone);
     padding: 1em 2em 2em;
-    border: solid 1ps #ccc;
-    border-radius: 6px;
+    border: none;
     min-width: 100%;
     max-width: 100%;
     width: 100%;
+    box-shadow:0px 10px 25px -10px rgba(0,0,0, .10);
 }
+
 
 
 /* Labels and input */
@@ -74,9 +125,12 @@ input{
     display: block;
     padding: .5em;
     border: solid 1px #999;
+    border-radius: 3px;
     width: 20em;
     margin-bottom: 1.2em;
+    background-color: var(--light-tone);
 }
+
 
 
 /* Submit Button */
@@ -87,15 +141,44 @@ input[type="submit"] {
     border-radius: 6px;
     background-color: #1c150b;
     color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2em ;
+    box-shadow: 5px 5px 4px -2px rgba(0,0,0, .15);
 }
 
 
+
+/* General Syling */
 .LEFT {
     margin-right: 55px;
 }
 
 #log-in {
     margin-left: 50px;
+}
+
+a {
+    color: var(--dark-tone);
+    text-decoration: none;
+}
+
+
+
+/* Interactions with user */
+
+input:hover {
+    box-shadow: 5px 5px 4px -3px rgba(0,0,0, .15);
+    background-color: #fffcf7;
+}
+
+input:focus {
+    box-shadow: 5px 5px 4px -3px rgba(0,0,0, .15);
+    background-color: #fffcf7;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--high-light);
+}
+
+a:hover{
+    color: var(--high-light);
 }

@@ -10,44 +10,50 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
-    <img id="bun-image" src="images/cinnamon-rollLG.jpg">
-    <div id="intro"  style="width: 100%">
-        <h1 id="Sign-up-message"> Sign up for our news letter! This is not a real online service.. But sign up anyway! <br> Sign up <em>now</em> to get started.</h1>
-        <h1 id="you-know-want-to"> You <em>know</em> you want to.</h1>
-        <form>
-            <fieldset >
-                <h2 id="lets-do-this"> Let's do this!</h2>
-    
-                <div class="LEFT" style="display:inline-block; margin-left: 20px;">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
+    <main>
+        <div class="image-block">
+            <div class="logo-container">
+                <h1 class="sweet-stuff">🧁 Sweet Stuff</h1>
+            </div> 
+        </div>
+        <div class="form-block">
+            <div id="intro"  style="height: 100vh; width: 100%">
+                <h1 id="Sign-up-message"> Sign up for our news letter! This is not a real online service.. But sign up anyway! <br> Sign up <em>now</em> to get started.</h1>
+                <h1 id="you-know-want-to"> You <em>know</em> you want to.</h1>
+                <form>
+                    <fieldset >
+                        <h2 id="lets-do-this"> Let's do this!</h2>
+            
+                        <div class="LEFT" style="display:inline-block; margin-left: 20px;">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
 
-                    <label for="user_email">EMAIL</label>
-                    <input type="email" id="user_email" name="email">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" id="user_email" name="email">
 
-                    <label for="user_password">PASSWORD</label>
-                    <input type="password" id="user_password" name="password">
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" id="user_password" name="password">
 
-                </div>
+                        </div>
 
-                <div class="RIGHT" style="display:inline-block; margin-right: 20px;  margin-left: 20px;">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
+                        <div class="RIGHT" style="display:inline-block; margin-right: 20px;  margin-left: 20px;">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">
 
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="phone_number" id="phone_number" name="phone_number">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="phone_number" id="phone_number" name="phone_number">
 
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
-                </div>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password">
+                        </div>
 
-            </fieldset>
-        </form>
-        <p><input type="submit" value="Create Account" /></p>
-        <text id="log-in">Already have an accout? <a href="#" class="btn">Log in</a></text>
-    </div>
-    
+                    </fieldset>
+                </form>
+                <p><input type="submit" style="font-weight: bold;" value="Create Account" /></p>
+                <text id="log-in">Already have an accout? <a href="#" class="btn" style="font-weight: bold;">Log in.</a></text>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>

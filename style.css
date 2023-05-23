@@ -134,7 +134,8 @@ input{
 
 
 /* Submit Button */
-input[type="submit"] {
+button {
+    display: block;
     margin: 55px 0px 35px 50px;
     width: 230px;
     height: 55px;
@@ -175,10 +176,18 @@ input:focus {
     background-color: #fffcf7;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: var(--high-light);
 }
 
 a:hover{
     color: var(--high-light);
+}
+
+#user_password, #confirm_password{
+    border-color: red;
+}
+
+#input-hint {
+    color: red;
 }

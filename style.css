@@ -96,6 +96,7 @@ h1 {
 
 #lets-do-this {
     margin-left: 18px;
+    margin-bottom: 15px;
 }
 
 
@@ -117,7 +118,6 @@ fieldset {
 
 label {
     display: block;
-    margin-top: 2em;
     letter-spacing: .05em;
 }
 
@@ -126,9 +126,13 @@ input{
     padding: .5em;
     border: solid 1px #999;
     border-radius: 3px;
-    width: 20em;
-    margin-bottom: 1.2em;
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 15px;
+    min-height: 15px;
     background-color: var(--light-tone);
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 
@@ -149,8 +153,14 @@ button {
 
 
 /* General Syling */
-.LEFT {
-    margin-right: 55px;
+.names, .email-phone, .passwords{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+}
+
+.password-test{
+    position: relative;
 }
 
 #log-in {
@@ -160,6 +170,14 @@ button {
 a {
     color: var(--dark-tone);
     text-decoration: none;
+}
+
+#user_password{
+    margin-bottom: 0px;
+}
+
+#input-hint{
+    margin-bottom: 20px;
 }
 
 

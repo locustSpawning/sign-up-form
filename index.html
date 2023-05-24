@@ -24,27 +24,45 @@
                     <fieldset >
                         <h2 id="lets-do-this"> Let's do this!</h2>
             
-                        <div class="LEFT" style="display:inline-block; margin-left: 20px;">
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name" required>
-
-                            <label for="user_email">EMAIL</label>
-                            <input type="email" id="user_email" name="email">
-
-                            <label for="user_password">PASSWORD</label>
-                            <input pattern="[a-zA-Z0-9]{6,10}" type="password" id="user_password" name="password" required>
-                            <p id="input-hint">*Passwords must match</p>
+                        <div class="names" >
+                            <div>
+                                <label for="first_name" >FIRST NAME</label>
+                                <input type="text" id="first_name" name="first_name" required>
+                            </div>
+                            
+                            <div>
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
                         </div>
 
-                        <div class="RIGHT" style="display:inline-block; margin-right: 20px;  margin-left: 20px;">
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name">
+                        <div class="email-phone">
+                            <div>
+                                <label for="user_email">EMAIL</label>
+                                <input type="email" id="user_email" name="email">
+                            </div>
+                            
+                            <div>
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <input type="tel" id="phone_number" name="phone_number">
+                            </div>
+                        </div>
 
-                            <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" id="phone_number" name="phone_number">
-
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password" minlength="6" maxlength="10" required>
+                            
+                        <div class="passwords">
+                            <div>
+                                <label for="user_password">PASSWORD</label>
+                                <div class="password-test">
+                                    <input pattern="[a-zA-Z0-9]{6,10}" type="password" id="user_password" name="password" required>
+                                    <p id="input-hint">*Passwords must match</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div>
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm_password" name="confirm_password" minlength="6" maxlength="10" required>
+                            </div>
                         </div>
 
                     </fieldset>

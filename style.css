@@ -43,20 +43,22 @@ body {
 /* Image Section */
 .image-block {
     flex: 4.5;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 100vh;
     background: url(images/cinnamon-rollLG.jpg) no-repeat center;
     max-width: 900px;
+    text-align: center;
 }
 
 .sweet-stuff {
     color:#fff;
     font-size: 4em;
+    text-align: center;
+    margin: 0px;
 }
 
 .logo-container {
     position: relative;
-    top: 445px;
     height: 125px;
     width: 100%;
     display: flex;
@@ -93,7 +95,6 @@ h1 {
 }
 
 #lets-do-this {
-    margin-left: 18px;
     margin-bottom: 15px;
 }
 
@@ -209,10 +210,43 @@ a:hover{
     color: red;
 }
 
-@media only screen and (max-width: 1303px) {
+@media only screen and (max-width: 850px) {
+    body{
+       flex-direction: column; 
+    }
 
-
-} 
+    .image-block {
+        min-height: 200px;
+        width:100%;
+        background: url(images/cinnamon-rollSM.jpg) no-repeat center;
+        text-align: center;
+    }
+    .sweet-stuff {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .logo-container {
+        position: relative;
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.404);
+    }
+    #intro, #form, fieldset, .names, .email-phone, .passwords{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    #Sign-up-message{
+        margin-top: 25px;
+    }
+   
 ::-webkit-scrollbar {
     width: 2em;
 }

@@ -16,21 +16,15 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-main {
-    height: 100%;
-    display: flex;
-    flex: 1;
-    margin: 0;
-    padding:0;
-}
+
 
 body {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
-    overflow: hidden;
+    min-height: 100%;
     background-color: var(--mid-tone);
     color: var(--dark-tone);
+    overflow: hidden;
 }
 
 .image-block,
@@ -73,10 +67,13 @@ body {
 /* Form Section */
 .form-block {
     flex: 1;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-
+#form {
+    flex-wrap: wrap;
+}
 
 /* Intro section - headings (2) */
 h1 {
@@ -210,11 +207,15 @@ a:hover{
     color: red;
 }
 
-@media only screen and (max-width: 1303px){
+ @media only screen and (max-width: 1303px){
     body {
-        overflow: auto;
         overflow-x: hidden;
+        overflow: auto;
     }
+
+  /*   #Sign-up-message{
+        margin-top: 150px;
+    } */
 
     ::-webkit-scrollbar {
         width: 2em;
@@ -231,4 +232,4 @@ a:hover{
         border-radius: 100vw;
         border: .25em solid hsl(29 61% 27% /1);
     }
-}
+} 

@@ -43,6 +43,7 @@ body {
 .image-block {
     flex: 4.5;
     justify-content: flex-start;
+    min-height: 100vh;
     background: url(images/cinnamon-rollLG.jpg) no-repeat center;
     max-width: 900px;
 }

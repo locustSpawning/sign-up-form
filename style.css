@@ -209,3 +209,26 @@ a:hover{
 #input-hint {
     color: red;
 }
+
+@media only screen and (max-width: 1303px){
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        width: 2em;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: hsl(29 61% 27% /1);
+        border-radius: 100vw;
+        margin-block: .5em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: hsl(29 61% 9% /1);
+        border-radius: 100vw;
+        border: .25em solid hsl(29 61% 27% /1);
+    }
+}

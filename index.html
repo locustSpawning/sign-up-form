@@ -20,7 +20,7 @@
             <h1 id="Sign-up-message"> Sign up for our news letter! This is not a real online service.. But sign up anyway! <br> Sign up <em>now</em> to get started.</h1>
             <h1 id="you-know-want-to"> You <em>know</em> you want to.</h1>
             <form id="form">
-                <fieldset >
+                <fieldset class="form-components" >
                     <h2 id="lets-do-this"> Let's do this!</h2>
         
                     <div class="names" >
@@ -37,12 +37,12 @@
 
                     <div class="email-phone">
                         <div>
-                            <label for="user_email">EMAIL</label>
-                            <input type="email" id="user_email" name="email">
+                            <label  title="example@gmail.com" pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9._+-]+\.[a-z]{2,}" for="user_email">EMAIL</label>
+                            <input type="email" id="user_email" name="email" required>
                         </div>
                         
                         <div>
-                            <label for="phone_number">PHONE NUMBER</label>
+                            <label pattern="[0-9]{10,11}" for="phone_number">PHONE NUMBER</label>
                             <input type="tel" id="phone_number" name="phone_number">
                         </div>
                     </div>
@@ -52,15 +52,15 @@
                         <div>
                             <label for="user_password">PASSWORD</label>
                             <div class="password-test">
-                                <input pattern="[a-zA-Z0-9]{6,10}" type="password" id="user_password" name="password" required>
+                                <input title="Must be atleast 6 characters" pattern="[a-zA-Z0-9]{6,10}" type="password" id="user_password" name="password" required>
                                 <p id="input-hint">*Passwords must match</p>
                             </div>
                         </div>
                         
                         
                         <div>
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password" minlength="6" maxlength="10" required>
+                            <label title="Passwords must match" for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
                         </div>
                     </div>
 
